@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		29B0F2E16ACBECA336BD142098A9039C /* RongCloudRTC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 123BC84FC9DF791EAAAFEB0BFC56196C /* Build configuration list for PBXAggregateTarget "RongCloudRTC" */;
+			buildPhases = (
+			);
+			dependencies = (
+				9D96077392F3EB705C54F5819F62B453 /* PBXTargetDependency */,
+			);
+			name = RongCloudRTC;
+		};
+		5F1390C193C1C7A4549931293D944BC0 /* RongCloudIM */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B4EB94B854F65F34A4EAEDDADBF2A838 /* Build configuration list for PBXAggregateTarget "RongCloudIM" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = RongCloudIM;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		919DDF7C7BA2C6D1F5245B4E17F2A947 /* Pods-CallKitTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7482EE6F9808CD5533D9633ECF39FA1 /* Pods-CallKitTest-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C9224F21BA62B12339FFF7521B78C90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29B0F2E16ACBECA336BD142098A9039C;
+			remoteInfo = RongCloudRTC;
+		};
+		687615D6B3D4B5F6FB5B7454A64C319A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1390C193C1C7A4549931293D944BC0;
+			remoteInfo = RongCloudIM;
+		};
+		FFC10862393289EC082095CA5BA9DEE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1390C193C1C7A4549931293D944BC0;
+			remoteInfo = RongCloudIM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030623843E94922A91E0B7B092B357BD /* RCColor.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = RCColor.plist; path = RongCloudIM/RCColor.plist; sourceTree = "<group>"; };
+		05A9ADAF9DBA606CEBB2B44ABFC1C7DD /* Pods-CallKitTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CallKitTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		07F5DB1BEAFAF5027282194133A0BE24 /* libopencore-amrwb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrwb.a"; path = "RongCloudIM/libopencore-amrwb.a"; sourceTree = "<group>"; };
+		0B3A6411F59E1A17ABFFFA877554DFF3 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "RongCloudIM/zh-Hans.lproj"; sourceTree = "<group>"; };
+		21FA0A530484EDEB9C6049A727FCD700 /* RongCallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongCallKit.framework; path = RongCloudRTC/RongCallKit.framework; sourceTree = "<group>"; };
+		25912940A3B9A05A567FBCB66FAD2A2C /* Pods-CallKitTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CallKitTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		2604E11187D018F26FA95E0F35A27650 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = RongCloudIM/en.lproj; sourceTree = "<group>"; };
+		30110087B62D6DF616032C742AF58CBC /* Pods-CallKitTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CallKitTest-resources.sh"; sourceTree = "<group>"; };
+		394C3DCD1A1BD829A489AA4CCE45797E /* RongSight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongSight.framework; path = RongCloudIM/RongSight.framework; sourceTree = "<group>"; };
+		3FFB2AF0D758BEFD3FC32BA0C89439AA /* libPods-CallKitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CallKitTest.a"; path = "libPods-CallKitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		796E4572746517EBA08BB140CC6E6ADB /* RongCallLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongCallLib.framework; path = RongCloudRTC/RongCallLib.framework; sourceTree = "<group>"; };
+		79D11D05084E66EA77D437CDBCA118A6 /* RongSticker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongSticker.framework; path = RongCloudIM/RongSticker.framework; sourceTree = "<group>"; };
+		815808484ED5E0EEA213CCBFFE47A31F /* libvo-amrwbenc.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libvo-amrwbenc.a"; path = "RongCloudIM/libvo-amrwbenc.a"; sourceTree = "<group>"; };
+		82E5943A02D04F3014043AD51EA105BA /* RongIMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMKit.framework; path = RongCloudIM/RongIMKit.framework; sourceTree = "<group>"; };
+		923C99A7D6CD3576FCD74D651E51A413 /* RongRTCLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongRTCLib.framework; path = RongCloudRTC/RongRTCLib.framework; sourceTree = "<group>"; };
+		9615A0F72E9E822F0813253399164038 /* libopencore-amrnb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "RongCloudIM/libopencore-amrnb.a"; sourceTree = "<group>"; };
+		98A51FEC66B2EC22AA35B7B308828B57 /* RongCloudIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudIM.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A48DE34B7477A8E9199E3604C870219A /* RCConfig.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = RCConfig.plist; path = RongCloudIM/RCConfig.plist; sourceTree = "<group>"; };
+		A946D1B9744288F4C13DCE75F90C2DF3 /* RongCloudRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudRTC.debug.xcconfig; sourceTree = "<group>"; };
+		BD78000E2CE1F87AE2B36B1BD546CE8B /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMLib.framework; path = RongCloudIM/RongIMLib.framework; sourceTree = "<group>"; };
+		C7DAE22281791694212951903EB45A7D /* RongSticker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RongSticker.bundle; path = RongCloudIM/RongSticker.bundle; sourceTree = "<group>"; };
+		C8EECDDBA890F6ADC941EA49AD6D40E8 /* Pods-CallKitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CallKitTest.release.xcconfig"; sourceTree = "<group>"; };
+		C90A3DAA82B64C28DDF749D3A66978A2 /* RongCloudRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudRTC.release.xcconfig; sourceTree = "<group>"; };
+		CC28F9EA9DE7A9272D152CA7C64D6CB7 /* Emoji.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Emoji.plist; path = RongCloudIM/Emoji.plist; sourceTree = "<group>"; };
+		EC48765838DCB56959E5A92032FD3A41 /* Pods-CallKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CallKitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F035435C6D9B0740393E2EC4996CAC64 /* RongCloud.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RongCloud.bundle; path = RongCloudIM/RongCloud.bundle; sourceTree = "<group>"; };
+		F2270F86B4C18F225F2A6947024166E7 /* RongCloudIM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudIM.release.xcconfig; sourceTree = "<group>"; };
+		F7482EE6F9808CD5533D9633ECF39FA1 /* Pods-CallKitTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CallKitTest-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4E0F4A56BD596FDB9AF25FBE77791FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02318FFAF84998A5398EA844B094CFF2 /* RongSticker */ = {
+			isa = PBXGroup;
+			children = (
+				335783FBDD2DED3BB9C986B6B917A544 /* Frameworks */,
+				F6D496A9457C7A48FBFD782F5D884DFE /* Resources */,
+			);
+			name = RongSticker;
+			sourceTree = "<group>";
+		};
+		0DD7D846467911BD57EB4B899E503BDC /* IMLib */ = {
+			isa = PBXGroup;
+			children = (
+				E8759FE99AB9C91D1E583D79F5960BBD /* Frameworks */,
+				21C480879D7D890993275C940FB591B3 /* Resources */,
+			);
+			name = IMLib;
+			sourceTree = "<group>";
+		};
+		21C480879D7D890993275C940FB591B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A48DE34B7477A8E9199E3604C870219A /* RCConfig.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2F58BCFBEC1E0D879ABC1700EB35171D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98A51FEC66B2EC22AA35B7B308828B57 /* RongCloudIM.debug.xcconfig */,
+				F2270F86B4C18F225F2A6947024166E7 /* RongCloudIM.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RongCloudIM";
+			sourceTree = "<group>";
+		};
+		335783FBDD2DED3BB9C986B6B917A544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79D11D05084E66EA77D437CDBCA118A6 /* RongSticker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3683F1C122C5A5B6B62DC3AAD4F9C7B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				796E4572746517EBA08BB140CC6E6ADB /* RongCallLib.framework */,
+				923C99A7D6CD3576FCD74D651E51A413 /* RongRTCLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FA7DD7743FB4515868873A462CA7BCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC22B036205122BD1A94FC136BCD7A1B /* RongCloudIM */,
+				C36A737792599BAF0B0750D374C61137 /* RongCloudRTC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58AEF244014DD2CE4BA3436EB7B8D96E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				394C3DCD1A1BD829A489AA4CCE45797E /* RongSight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F42173D4BAE511D2D42E5177B3017C8 /* RongCallKit */ = {
+			isa = PBXGroup;
+			children = (
+				76BE51E417B9899B21AFD071176F6C07 /* Frameworks */,
+			);
+			name = RongCallKit;
+			sourceTree = "<group>";
+		};
+		76BE51E417B9899B21AFD071176F6C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21FA0A530484EDEB9C6049A727FCD700 /* RongCallKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		773D4228633B8CF9B13CDC9ECACD615F /* Sight */ = {
+			isa = PBXGroup;
+			children = (
+				58AEF244014DD2CE4BA3436EB7B8D96E /* Frameworks */,
+			);
+			name = Sight;
+			sourceTree = "<group>";
+		};
+		AAB3C841C015205BE7057DE31B5C201E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82E5943A02D04F3014043AD51EA105BA /* RongIMKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF0EF557ED6379B327A0FE16200F1957 /* RongCallLib */ = {
+			isa = PBXGroup;
+			children = (
+				3683F1C122C5A5B6B62DC3AAD4F9C7B5 /* Frameworks */,
+			);
+			name = RongCallLib;
+			sourceTree = "<group>";
+		};
+		C2688023F3BF998DA2DECE9877564958 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FFB2AF0D758BEFD3FC32BA0C89439AA /* libPods-CallKitTest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C36A737792599BAF0B0750D374C61137 /* RongCloudRTC */ = {
+			isa = PBXGroup;
+			children = (
+				6F42173D4BAE511D2D42E5177B3017C8 /* RongCallKit */,
+				AF0EF557ED6379B327A0FE16200F1957 /* RongCallLib */,
+				E9399B68F066F45AAA35BB8C32509A7D /* Support Files */,
+			);
+			name = RongCloudRTC;
+			path = RongCloudRTC;
+			sourceTree = "<group>";
+		};
+		C7EB94E1763BA335E662C4627A0DAAB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC28F9EA9DE7A9272D152CA7C64D6CB7 /* Emoji.plist */,
+				2604E11187D018F26FA95E0F35A27650 /* en.lproj */,
+				030623843E94922A91E0B7B092B357BD /* RCColor.plist */,
+				F035435C6D9B0740393E2EC4996CAC64 /* RongCloud.bundle */,
+				0B3A6411F59E1A17ABFFFA877554DFF3 /* zh-Hans.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				4FA7DD7743FB4515868873A462CA7BCC /* Pods */,
+				C2688023F3BF998DA2DECE9877564958 /* Products */,
+				DE2695782AA5597D18F1332E123F9269 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D3D69B6CA0EA5FDE16BD35058E44517D /* IMKit */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3C841C015205BE7057DE31B5C201E /* Frameworks */,
+				C7EB94E1763BA335E662C4627A0DAAB2 /* Resources */,
+			);
+			name = IMKit;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE2695782AA5597D18F1332E123F9269 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC315FC13842DDB97EF4A10DE7D7CD02 /* Pods-CallKitTest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E8759FE99AB9C91D1E583D79F5960BBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9615A0F72E9E822F0813253399164038 /* libopencore-amrnb.a */,
+				07F5DB1BEAFAF5027282194133A0BE24 /* libopencore-amrwb.a */,
+				815808484ED5E0EEA213CCBFFE47A31F /* libvo-amrwbenc.a */,
+				BD78000E2CE1F87AE2B36B1BD546CE8B /* RongIMLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9399B68F066F45AAA35BB8C32509A7D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A946D1B9744288F4C13DCE75F90C2DF3 /* RongCloudRTC.debug.xcconfig */,
+				C90A3DAA82B64C28DDF749D3A66978A2 /* RongCloudRTC.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RongCloudRTC";
+			sourceTree = "<group>";
+		};
+		EC22B036205122BD1A94FC136BCD7A1B /* RongCloudIM */ = {
+			isa = PBXGroup;
+			children = (
+				D3D69B6CA0EA5FDE16BD35058E44517D /* IMKit */,
+				0DD7D846467911BD57EB4B899E503BDC /* IMLib */,
+				02318FFAF84998A5398EA844B094CFF2 /* RongSticker */,
+				773D4228633B8CF9B13CDC9ECACD615F /* Sight */,
+				2F58BCFBEC1E0D879ABC1700EB35171D /* Support Files */,
+			);
+			name = RongCloudIM;
+			path = RongCloudIM;
+			sourceTree = "<group>";
+		};
+		F6D496A9457C7A48FBFD782F5D884DFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7DAE22281791694212951903EB45A7D /* RongSticker.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FC315FC13842DDB97EF4A10DE7D7CD02 /* Pods-CallKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				05A9ADAF9DBA606CEBB2B44ABFC1C7DD /* Pods-CallKitTest-acknowledgements.markdown */,
+				25912940A3B9A05A567FBCB66FAD2A2C /* Pods-CallKitTest-acknowledgements.plist */,
+				F7482EE6F9808CD5533D9633ECF39FA1 /* Pods-CallKitTest-dummy.m */,
+				30110087B62D6DF616032C742AF58CBC /* Pods-CallKitTest-resources.sh */,
+				EC48765838DCB56959E5A92032FD3A41 /* Pods-CallKitTest.debug.xcconfig */,
+				C8EECDDBA890F6ADC941EA49AD6D40E8 /* Pods-CallKitTest.release.xcconfig */,
+			);
+			name = "Pods-CallKitTest";
+			path = "Target Support Files/Pods-CallKitTest";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60DA67635FD7A64E269CFF60C4B60899 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3C7D6D60BA2C4A2349B532D8D1BC8853 /* Pods-CallKitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB387D6D2811EE78E8EA9AB516C0C99 /* Build configuration list for PBXNativeTarget "Pods-CallKitTest" */;
+			buildPhases = (
+				60DA67635FD7A64E269CFF60C4B60899 /* Headers */,
+				0EAA2C35C35F7F97FC03C88B816E9194 /* Sources */,
+				E4E0F4A56BD596FDB9AF25FBE77791FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEE025D340F89311F7B8F8C56CE3A0C /* PBXTargetDependency */,
+				82A8B1C6559B349EF9CE078B54BD0E88 /* PBXTargetDependency */,
+			);
+			name = "Pods-CallKitTest";
+			productName = "Pods-CallKitTest";
+			productReference = 3FFB2AF0D758BEFD3FC32BA0C89439AA /* libPods-CallKitTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C2688023F3BF998DA2DECE9877564958 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C7D6D60BA2C4A2349B532D8D1BC8853 /* Pods-CallKitTest */,
+				5F1390C193C1C7A4549931293D944BC0 /* RongCloudIM */,
+				29B0F2E16ACBECA336BD142098A9039C /* RongCloudRTC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EAA2C35C35F7F97FC03C88B816E9194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919DDF7C7BA2C6D1F5245B4E17F2A947 /* Pods-CallKitTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CEE025D340F89311F7B8F8C56CE3A0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RongCloudIM;
+			target = 5F1390C193C1C7A4549931293D944BC0 /* RongCloudIM */;
+			targetProxy = 687615D6B3D4B5F6FB5B7454A64C319A /* PBXContainerItemProxy */;
+		};
+		82A8B1C6559B349EF9CE078B54BD0E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RongCloudRTC;
+			target = 29B0F2E16ACBECA336BD142098A9039C /* RongCloudRTC */;
+			targetProxy = 5C9224F21BA62B12339FFF7521B78C90 /* PBXContainerItemProxy */;
+		};
+		9D96077392F3EB705C54F5819F62B453 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RongCloudIM;
+			target = 5F1390C193C1C7A4549931293D944BC0 /* RongCloudIM */;
+			targetProxy = FFC10862393289EC082095CA5BA9DEE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E926C1873A6E6AC144DC242B0E72854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2270F86B4C18F225F2A6947024166E7 /* RongCloudIM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F062259CB9A9D4EDC34A1CF12856DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C90A3DAA82B64C28DDF749D3A66978A2 /* RongCloudRTC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		92EE2BB7D20347C4B5D6AC6A17A293EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A51FEC66B2EC22AA35B7B308828B57 /* RongCloudIM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		943D78961CC21679C31ACEF4A396F1BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A946D1B9744288F4C13DCE75F90C2DF3 /* RongCloudRTC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0B22355438AFFF339D5831D6BEF1206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8EECDDBA890F6ADC941EA49AD6D40E8 /* Pods-CallKitTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F914877D485A08A904D133865B1CFEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC48765838DCB56959E5A92032FD3A41 /* Pods-CallKitTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		123BC84FC9DF791EAAAFEB0BFC56196C /* Build configuration list for PBXAggregateTarget "RongCloudRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943D78961CC21679C31ACEF4A396F1BB /* Debug */,
+				6F062259CB9A9D4EDC34A1CF12856DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB387D6D2811EE78E8EA9AB516C0C99 /* Build configuration list for PBXNativeTarget "Pods-CallKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F914877D485A08A904D133865B1CFEE8 /* Debug */,
+				F0B22355438AFFF339D5831D6BEF1206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4EB94B854F65F34A4EAEDDADBF2A838 /* Build configuration list for PBXAggregateTarget "RongCloudIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92EE2BB7D20347C4B5D6AC6A17A293EE /* Debug */,
+				6E926C1873A6E6AC144DC242B0E72854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
