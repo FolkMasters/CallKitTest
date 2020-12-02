@@ -58,16 +58,18 @@
 - (IBAction)logoutAction:(id)sender {
     [[RCIMClient sharedRCIMClient]logout];
 }
-
+//
 - (IBAction)groupCallAction:(id)sender {
     RCCallMediaType type = self.typeSwitch.on ? RCCallMediaAudio : RCCallMediaVideo;
     [[RCCall sharedRCCall] startMultiCallViewController:ConversationType_GROUP targetId:@"101" mediaType:type userIdList:@[@"10001",@"10005"]];
 }
+//
 - (IBAction)groupOptionalAction:(id)sender {
     
     RCCallMediaType type = self.typeSwitch.on ? RCCallMediaAudio : RCCallMediaVideo;
     [[RCCall sharedRCCall] startMultiCall:type targetId:@"101" mediaType:RCCallMediaAudio];
 }
+//
 - (IBAction)typeSwitchAction:(UISwitch*)sender {
     self.typeLabel.text = sender.on ? @"语音" : @"视频";
 }
