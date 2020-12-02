@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E4604912575113100D51F78 /* RongCallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDD6F942574F74E00C29E85 /* RongCallKit.framework */; };
 		C4FE98541ECE16AEC4202612 /* libPods-CallKitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D040F62D3741AF1952381C /* libPods-CallKitTest.a */; };
 		C6498104257106730001BF76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6498103257106730001BF76 /* AppDelegate.m */; };
 		C649810A257106730001BF76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6498109257106730001BF76 /* ViewController.m */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		03FD0ACB84D59BE2105148E9 /* Pods-CallKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitTest.debug.xcconfig"; path = "Target Support Files/Pods-CallKitTest/Pods-CallKitTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6EDD6F942574F74E00C29E85 /* RongCallKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RongCallKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE8F28A2576717400526582 /* CallKitTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallKitTest.entitlements; sourceTree = "<group>"; };
 		91079DDCE1369309502C4225 /* Pods-CallKitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitTest.release.xcconfig"; path = "Target Support Files/Pods-CallKitTest/Pods-CallKitTest.release.xcconfig"; sourceTree = "<group>"; };
 		C64980FF257106730001BF76 /* CallKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6498102257106730001BF76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4604912575113100D51F78 /* RongCallKit.framework in Frameworks */,
 				C6498195257108210001BF76 /* libsqlite3.tbd in Frameworks */,
 				C6498193257108190001BF76 /* libiconv.tbd in Frameworks */,
 				C6498191257108120001BF76 /* libbz2.tbd in Frameworks */,
@@ -188,6 +191,7 @@
 		C6498101257106730001BF76 /* CallKitTest */ = {
 			isa = PBXGroup;
 			children = (
+				6EE8F28A2576717400526582 /* CallKitTest.entitlements */,
 				C6498102257106730001BF76 /* AppDelegate.h */,
 				C6498103257106730001BF76 /* AppDelegate.m */,
 				C6498108257106730001BF76 /* ViewController.h */,
@@ -600,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CallKitTest/CallKitTest.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQJSB93Y3D;
@@ -631,6 +636,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CallKitTest/CallKitTest.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQJSB93Y3D;

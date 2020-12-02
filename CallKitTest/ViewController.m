@@ -29,19 +29,19 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [RCIM sharedRCIM].userInfoDataSource = self;
-//    [RCIM sharedRCIM].enablePersistentUserInfoCache = YES;
+    [RCIM sharedRCIM].enablePersistentUserInfoCache = YES;
     
 }
 - (IBAction)connectAction:(id)sender {
     NSString *key = self.idInputView.text ?: @"10001";
     NSString *token = self.dataMap[key];
     
-    [[RCIMClient sharedRCIMClient] connectWithToken:token success:^(NSString *userId) {
-        [self updateUI:[NSString stringWithFormat:@"success userId = %@",userId]];
-        } error:^(RCConnectErrorCode status) {
-            [self updateUI:[NSString stringWithFormat:@"status code= %ld",(long)status]];
-        } tokenIncorrect:^{
+    [[RCIMClient sharedRCIMClient] connectWithToken:token dbOpened:^(RCDBErrorCode code) {
             
+        } success:^(NSString *userId) {
+            [self updateUI:[NSString stringWithFormat:@"success userId = %@",userId]];
+        } error:^(RCConnectErrorCode errorCode) {
+            [self updateUI:[NSString stringWithFormat:@"status code= %ld",(long)errorCode]];
         }];
 }
 
@@ -89,22 +89,28 @@
     });
 }
 
+/*
 - (NSString *)getDeviceToken:(NSString *)uid {
     // 1.创建一个网络路径
-    NSURL *url = [NSURL URLWithString:@"https://api-cn.ronghub.com/user/getToken.json"];
+    NSURL *url = [NSURL URLWithString:@"https://developer.rongcloud.cn/apitrial/apiProcess"];
     // 2.创建一个网络请求，分别设置请求方法、请求参数
     NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:url];
     request.HTTPMethod = @"POST";
-    NSString *args = [NSString stringWithFormat:@"userId=%@&name=&portraitUri=",uid];
+    NSString *args = [NSString stringWithFormat:@"userId=%@&name=&portraitUri=&id=DqgQ-DZFyjMvDhJgTxbImg&apiId=0slhRzAYp1TUAZx1RFgaWA&format=1&environment=1",uid];
     request.HTTPBody = [args dataUsingEncoding:NSUTF8StringEncoding];
     // 3.获得会话对象
     NSURLSession *session = [NSURLSession sharedSession];
     // 4.根据会话对象，创建一个Task任务
     NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
     NSLog(@"从服务器获取到数据");
-    /*
-    对从服务器获取到的数据data进行相应的处理.
-    */
+        
+        NSHTTPURLResponse *HTTPURLResponse = (id)response.classForCoder;
+        NSDictionary *allHeaderFields = HTTPURLResponse.allHeaderFields;
+        
+
+    
+    //对从服务器获取到的数据data进行相应的处理.
+    
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
         
         NSLog(@"%@",dict);
@@ -113,7 +119,7 @@
     [sessionDataTask resume];
     
     return nil;
-}
+}*/
 
 #pragma mark- getter
 -(NSDictionary *)dataMap {

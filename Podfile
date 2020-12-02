@@ -7,8 +7,6 @@ target 'CallKitTest' do
 #  use_frameworks!
 
   # Pods for CallKitTest
-  
-  pod 'RongCloudIM', '~> 2.10.6'
-  pod 'RongCloudRTC', '~> 2.10.6'
+  pod 'RongCloudRTC'
 
 end
