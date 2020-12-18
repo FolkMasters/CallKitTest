@@ -25,7 +25,7 @@ typedef NS_ENUM (NSInteger, RCRTCVideoRenderMode) {
 @interface RCRTCVideoExtend : NSObject
 
 /*!
- 裁剪模式, 1: 裁剪  2: 整个充满
+ 本地输出视频流的裁剪模式
  */
 @property (nonatomic, assign) RCRTCVideoRenderMode renderMode;
 

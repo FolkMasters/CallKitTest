@@ -25,13 +25,13 @@
  某些操作的回调
  
  @param isSuccess 操作是否成功
- @param desc 成功或者失败描述的错误码
+ @param code 成功或者失败描述的错误码
  @discussion
  某些操作的回调
  
  @remarks 资源管理
  */
-typedef void(^RCRTCOperationCallback)(BOOL isSuccess, RCRTCCode desc);
+typedef void(^RCRTCOperationCallback)(BOOL isSuccess, RCRTCCode code);
 
 /*!
  直播操作的回调
@@ -154,7 +154,11 @@ typedef NS_ENUM(NSUInteger, RCRTCVideoSizePreset) {
     /*!
      分辨率 1280X720
      */
-    RCRTCVideoSizePreset1280x720
+    RCRTCVideoSizePreset1280x720,
+    /*!
+     分辨率 1920X1080
+     */
+    RCRTCVideoSizePreset1920x1080
 };
 
 /*!

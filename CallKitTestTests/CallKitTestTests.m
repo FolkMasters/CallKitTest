@@ -1,6 +1,6 @@
 //
-//  CallKitTestTests.m
-//  CallKitTestTests
+//  CallKitDemoTests.m
+//  CallKitDemoTests
 //
 //  Created by zafer on 2020/11/27.
 //  Copyright © 2020 zafer. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface CallKitTestTests : XCTestCase
+@interface CallKitDemoTests : XCTestCase
 
 @end
 
-@implementation CallKitTestTests
+@implementation CallKitDemoTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

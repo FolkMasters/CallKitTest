@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RCRTCCustomLayout : NSObject
 
 /*!
- 要混流的流，必须为视频流
+ 要混合布局的流，必须为视频流
  */
 @property (nonatomic, strong) RCRTCStream *videoStream;
 

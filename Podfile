@@ -2,11 +2,11 @@
 # platform :ios, '9.0'
 
 
-target 'CallKitTest' do
+target 'CallKitDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
 #  use_frameworks!
 
-  # Pods for CallKitTest
-  pod 'RongCloudRTC'
-
+  # Pods for CallKitDemo
+    pod 'RongCloudRTC'
+   # pod 'RongCloudIM'
 end

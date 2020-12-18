@@ -38,22 +38,24 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RCRTCVideoOutputStream : RCRTCOutputStream <RCRTCVideoObserverInterface>
 
 /**
- 是否启用视频小流。摄像头视频流，默认开启。自定义视频流，默认关闭
+ 是否启用视频小流
+
+ 摄像头视频流，默认开启。自定义视频流，默认关闭
  */
 @property (nonatomic, assign, readwrite) BOOL enableTinyStream;
 
 /**
- 可动态调整的视频配置
+ 本地视频配置
  */
 @property (nonatomic, copy) RCRTCVideoStreamConfig *videoConfig;
 
 /**
- 视频流数据源
+ 输出视频源
  */
 @property (nonatomic, weak) id<RCRTCVideoSourceInterface> videoSource;
 
 /*!
- 初始化流数据的参数
+ 初始化视频流数据并设置标签
  
  @param tag 用户自定标签，注：用户不能传特殊字符，只支持 ASCII
  @discussion
@@ -65,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initVideoOutputStreamWithTag:(NSString *)tag;
 
 /*!
- 设置视频媒体数据的渲染界面
+ 设置视频流的渲染视图
  
  @param render 渲染界面，传空则将原视图删除
  @discussion

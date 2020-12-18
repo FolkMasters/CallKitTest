@@ -36,8 +36,9 @@ typedef NS_ENUM (NSInteger, RCRTCMixLayoutMode) {
 @property (nonatomic, assign, readonly) NSInteger version;
 
 /*!
- 合流模式，1：自定义布局  2：悬浮布局  3：自适应布局
- 
+ 合流布局模式
+
+ 1：自定义布局  2：悬浮布局  3：自适应布局
  模式 2 和 3 时不需要设置 用户的 customLayoutList
  */
 @property (nonatomic, assign) RCRTCMixLayoutMode layoutMode;

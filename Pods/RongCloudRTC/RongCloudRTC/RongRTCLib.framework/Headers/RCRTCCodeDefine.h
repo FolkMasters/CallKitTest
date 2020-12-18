@@ -64,11 +64,19 @@ typedef NS_ENUM (NSInteger, RCRTCCode) {
      */
     RCRTCCodePublishDuplicateResources        = 50020,
     /*!
-     初步会话协商错误，没有消息的音视频参数
+     设置本地 SDP 错误
+     */
+    RCRTCCodeSetLocalSDPError                 = 50021,
+    /*!
+     初步会话协商错误，没有消息的音视频参数，下个大版本废弃
      */
     RCRTCCodeSessionDegotiateOfferError       = 50021,
     /*!
-     会话协商错误，协商数据不匹配或者其他问题
+     设置远端 SDP 错误
+     */
+    RCRTCCodeSetRemoteSDPError                = 50022,
+    /*!
+     会话协商错误，协商数据不匹配或者其他问题，下个大版本废弃
      */
     RCRTCCodeSessionDegotiateSetRemoteError   = 50022,
     /*!
@@ -79,6 +87,14 @@ typedef NS_ENUM (NSInteger, RCRTCCode) {
      取消发布不存在的资源
      */
     RCRTCCodeUnpublishUnexistStream           = 50024,
+    /*!
+     创建本地 Offer 失败
+     */
+    RCRTCCodeCreateOfferError                 = 50025,
+    /*!
+     创建本地 Answer 失败
+     */
+    RCRTCCodeCreateAnswerError                = 50026,
     /*!
      订阅不存在的音视频资源
      */
@@ -92,9 +108,29 @@ typedef NS_ENUM (NSInteger, RCRTCCode) {
      */
     RCRTCCodeUnsubscribeNotExistResouce       = 50032,
     /*!
+     RTCConnection 为空
+     */
+    RCRTCCodeRTCConnectionIsNil               = 50065,
+    /*!
      解析 Json 串出错
      */
     RCRTCCodeParseJsonDataError               = 50069,
+    /*!
+     未加入主房间
+     */
+    RCRTCCodeNotJoinedMainRoom                = 50074,
+    /*!
+     操作的副房间号码和主房间号码一致错误
+     */
+    RCRTCCodeOtherRoomIDSameWithMainRoomId    = 50075,
+    /*!
+     取消的跨房间连麦请求不存在
+     */
+    RCRTCCodeCancelInviteNotExist             = 50076,
+    /*!
+     响应的跨房间连麦请求不存在
+     */
+    RCRTCCodeRespondInviteNotExist            = 50077,
     /*!
      cdn 地址配置数量到达上限（最大为10个）
      */

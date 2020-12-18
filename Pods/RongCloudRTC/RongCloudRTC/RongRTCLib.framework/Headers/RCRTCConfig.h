@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isEnableAutoReconnect;
 
 /*!
+  设置房间统计信息的回调间隔
   单位毫秒, 默认1000ms(1s)。 注意 interval 值太小会影响 SDK 性能，如果小于 100 配置无法生效
  */
 @property (nonatomic, assign) NSUInteger statusReportInterval;

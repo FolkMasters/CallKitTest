@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol RCRTCVideoInputStreamDelegate <NSObject>
 
 /*!
- 即将渲染视频帧数据回调
+ 即将渲染视频帧的数据回调
  
  @param ref 即将渲染的视频帧数据
  @param stream 即将渲染的视频帧数据所属接收到的流
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RCRTCVideoInputStream : RCRTCInputStream
 
 /*!
- 接收到视频流的代理
+ 接收到的视频流代理
  */
 @property (nonatomic, weak) id<RCRTCVideoInputStreamDelegate> delegate;
 

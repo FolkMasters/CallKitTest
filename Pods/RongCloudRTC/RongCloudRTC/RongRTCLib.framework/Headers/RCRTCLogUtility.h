@@ -13,585 +13,584 @@
 extern "C" {
 #endif
 
-void RCRTCLog(RCFwLogLevel level, NSString* tag, NSString* format, ...);
+void RCRTCLog(RCFwLogLevel level, NSString *tag, NSString *format, ...);
 
 #ifdef __cplusplus
 }
 #endif
 
-
-
-#pragma mark ---------------------------------- 华丽的分割线 -------------------------------------------
-
-
-
+#pragma mark - --------------------------------- 华丽的分割线 -------------------------------------------
 
 #pragma mark - log 来源标记
 
-/*
+/*!
  log 来源 APP 触发
  */
-FOUNDATION_EXTERN NSString * const RongRTCLogFromAPP;
+FOUNDATION_EXTERN NSString *const RongRTCLogFromAPP;
 
-/*
+/*!
  log 来源 Lib 触发
  */
-FOUNDATION_EXTERN NSString * const RongRTCLogFromLib;
+FOUNDATION_EXTERN NSString *const RongRTCLogFromLib;
 
-/*
+/*!
  log 来源 protocol 触发
  */
-FOUNDATION_EXTERN NSString * const RongRTCLogFromProtocol;
+FOUNDATION_EXTERN NSString *const RongRTCLogFromProtocol;
 
-/*
+/*!
  操作
  */
-FOUNDATION_EXTERN NSString * const RongRTCLogTaskOperation;
+FOUNDATION_EXTERN NSString *const RongRTCLogTaskOperation;
 
-
-
-#pragma mark ---------------------------------- 华丽的分割线 -------------------------------------------
+#pragma mark - --------------------------------- 华丽的分割线 -------------------------------------------
 
 #pragma mark - log 任务生命周期标记
 
-/*
+/*!
  任务开始标记
  */
-FOUNDATION_EXTERN NSString * const RongRTCLogTaskBegin;
+FOUNDATION_EXTERN NSString *const RongRTCLogTaskBegin;
 
-/*
+/*!
  任务成功标记
  */
-FOUNDATION_EXTERN NSString * const RongRTCLogTaskResponse;
+FOUNDATION_EXTERN NSString *const RongRTCLogTaskResponse;
 
-/*
+/*!
  任务失败标记
  */
-FOUNDATION_EXTERN NSString * const RongRTCLogTaskError;
+FOUNDATION_EXTERN NSString *const RongRTCLogTaskError;
 
-/*
+/*!
  任务状态标记
  */
-FOUNDATION_EXTERN NSString * const RongRTCLogTaskStatus;
+FOUNDATION_EXTERN NSString *const RongRTCLogTaskStatus;
 
-
-
-
-#pragma mark ---------------------------------- 华丽的分割线 -------------------------------------------
+#pragma mark - --------------------------------- 华丽的分割线 -------------------------------------------
 
 #pragma mark - log 任务名字标记
 
 // ----以下字符串不能随便改,iOS 和 Android 一模一样，听见没，会影响上传，如果以后想新加 log ，需要把字符串也同步告诉 IM 那边，别问我为什么，方案不是我定的。 -----
 
-#pragma mark -- joinRoom
-
-/*
+#pragma mark - joinRoom
+/*!
  joinRoom 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogJoinRoomTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogJoinRoomTag;
 
-/*
+#pragma mark - joinOtherRoom
+/*!
+ joinOtherRoom 标记
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogJoinOtherRoomTag;
+
+#pragma mark - leaveOtherRoom
+/*!
+ leaveOtherRoom 标记
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogLeaveOtherRoomTag;
+
+#pragma mark - joinRoomAndGetData
+/*!
  joinRoom 从 IM 获取信息的标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogJoinRoomAndGetDataTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogJoinRoomAndGetDataTag;
 
-#pragma mark -- leaveRoom
-
-/*
+#pragma mark - leaveRoom
+/*!
  leaveRoom 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogLeaveRoomTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogLeaveRoomTag;
 
-#pragma mark -- createOffer
-
-/*
+#pragma mark - createOffer
+/*!
  createOffer 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogCreateOfferTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogCreateOfferTag;
 
-#pragma mark -- setRemoteSDP
-
-/*
+#pragma mark - setRemoteSDP
+/*!
  setRemoteSDP 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetRemoteSDPTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetRemoteSDPTag;
 
-
-#pragma mark -- setLocalSDP
-
-/*
+#pragma mark - setLocalSDP
+/*!
  setLocalSDP 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetLocalSDPTag ;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetLocalSDPTag;
 
-#pragma mark -- createAnswer
-
-/*
+#pragma mark - createAnswer
+/*!
  createAnswer 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogCreateAnswerTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogCreateAnswerTag;
 
-#pragma mark -- publishStream
-
-/*
+#pragma mark - publishStream
+/*!
  publishStream 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogPublishAVStreamTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogPublishAVStreamTag;
 
-#pragma mark -- unpublishStream
-
-/*
+#pragma mark - unpublishStream
+/*!
  publishStream 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogUnpublishAVStreamTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogUnpublishAVStreamTag;
 
-#pragma mark -- MSExchange
-
-/*
+#pragma mark - MSExchange
+/*!
  MediaServerExchange 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogMSExchangeTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogMSExchangeTag;
 
-#pragma mark -- putInnerDatas
-
-/*
+#pragma mark - putInnerDatas
+/*!
  putInnerDatas 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogPutInnerDatasTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogPutInnerDatasTag;
 
-#pragma mark -- subscribeLiveStream
-
-/*
+#pragma mark - subscribeLiveStream
+/*!
  subscribeLiveStream 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSubscribeLiveStreamTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSubscribeLiveStreamTag;
 
-#pragma mark -- unsubscribeLiveStream
-
-/*
+#pragma mark - unsubscribeLiveStream
+/*!
  unsubscribeLiveStream 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogUnsubscribeLiveStreamTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogUnsubscribeLiveStreamTag;
 
-#pragma mark -- mediaLiveLeave
-
-/*
+#pragma mark - mediaLiveLeave
+/*!
  mediaLiveLeave 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogMediaLiveLeaveTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogMediaLiveLeaveTag;
 
-#pragma mark -- getRtcToken
-
-/*
+#pragma mark - getRtcToken
+/*!
  getRtcToken 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogGetRTCTokenTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogGetRTCTokenTag;
 
-#pragma mark -- subscribeStream
-
-/*
+#pragma mark - subscribeStream
+/*!
  subscribeStream 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSubscribeAVStreamTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSubscribeAVStreamTag;
 
-#pragma mark -- unsubscribeStream
-
-/*
+#pragma mark - unsubscribeStream
+/*!
  unsubscribeStream 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogUnsubscribeAVStreamTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogUnsubscribeAVStreamTag;
 
-#pragma mark -- startCapture
-
-/*
+#pragma mark - startCapture
+/*!
  startCapture 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogStartCaptureTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogStartCaptureTag;
 
-#pragma mark -- stopCapture
-
-/*
+#pragma mark - stopCapture
+/*!
  stopCapture 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogStopCaptureTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogStopCaptureTag;
 
-#pragma mark -- switchCamera
-
-/*
+#pragma mark - switchCamera
+/*!
  switchCamera 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSwitchCameraTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSwitchCameraTag;
 
-#pragma mark -- changeVideoSize
-
-/*
+#pragma mark - changeVideoSize
+/*!
  changeVideoSize 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogChangeVideoSizeTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogChangeVideoSizeTag;
 
-#pragma mark -- setMicrophoneDisable
-
-/*
+#pragma mark - setMicrophoneDisable
+/*!
  setMicrophoneDisable 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetMicrophoneDisableTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetMicrophoneDisableTag;
 
-#pragma mark -- useSpeaker
-
-/*
+#pragma mark - useSpeaker
+/*!
  useSpeaker 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogUseSpeakerTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogUseSpeakerTag;
 
-#pragma mark -- RTCConfig
-
-/*
+#pragma mark - RTCConfig
+/*!
  RTCConfig 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRTCConfigTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRTCConfigTag;
 
-#pragma mark -- RTCAudioConfig
-
-/*
+#pragma mark - RTCAudioConfig
+/*!
  RTCAudioConfig 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRTCAudioConfigTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRTCAudioConfigTag;
 
-#pragma mark -- RTCVideoConfig
-/*
+#pragma mark - RTCVideoConfig
+/*!
  RTCAudioConfig 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRTCVideoConfigTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRTCVideoConfigTag;
 
-#pragma mark -- deviceInfo
-
-/*
+#pragma mark - deviceInfo
+/*!
  deviceInfo 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogDeviceInfoTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogDeviceInfoTag;
 
-#pragma mark -- changeAudioScenario
-
-/*
+#pragma mark - changeAudioScenario
+/*!
  changeAudioScenario 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogChangeAudioScenarioTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogChangeAudioScenarioTag;
 
-#pragma mark -- rejoinRoom
-
-/*
+#pragma mark - rejoinRoom
+/*!
  rejoinRoom 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRejoinRoomTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRejoinRoomTag;
 
-#pragma mark -- resetIce
-
-/*
+#pragma mark - resetIce
+/*!
  resetIce 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogResetIceTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogResetIceTag;
 
-#pragma mark -- setMixConfig
-
-/*
+#pragma mark - setMixConfig
+/*!
  setMixConfig 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetMixConfigTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetMixConfigTag;
 
-#pragma mark -- rtcPing
-
-/*
+#pragma mark - rtcPing
+/*!
  rtcPing 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRtcPingTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRtcPingTag;
 
-#pragma mark -- remoteUserPublishResource
-
-/*
+#pragma mark - remoteUserPublishResource
+/*!
  remoteUserPublishResource 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRemoteUserPublishResourceTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRemoteUserPublishResourceTag;
 
-#pragma mark -- remoteUserModifyResource
-
-/*
+#pragma mark - remoteUserModifyResource
+/*!
  remoteUserModifyResource 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRemoteUserModifyResourceTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRemoteUserModifyResourceTag;
 
-#pragma mark -- remoteUserUnpublishResource
-
-/*
+#pragma mark - remoteUserUnpublishResource
+/*!
  remoteUserUnpublishResource 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRemoteUserUnpublishResourceTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRemoteUserUnpublishResourceTag;
 
-#pragma mark -- remoteUserTotalContentResource
-
-/*
+#pragma mark - remoteUserTotalContentResource
+/*!
  remoteUserTotalContentResource 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRemoteUserTotalContentResourceTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRemoteUserTotalContentResourceTag;
 
-#pragma mark -- userJoined
-
-/*
+#pragma mark - userJoined
+/*!
  userJoined 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogUserJoinedTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogUserJoinedTag;
 
-#pragma mark -- userLeft
-
-/*
+#pragma mark - userLeft
+/*!
  userLeft 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogUserLeftTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogUserLeftTag;
 
-#pragma mark -- userOffline
-
-/*
+#pragma mark - userOffline
+/*!
  userOffline 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogUserOfflineTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogUserOfflineTag;
 
-#pragma mark -- audioTrackAdd
-
-/*
+#pragma mark - audioTrackAdd
+/*!
  audioTrackAdd 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogAudioTrackAddTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogAudioTrackAddTag;
 
-#pragma mark -- videoTrackAdd
-
-/*
+#pragma mark - videoTrackAdd
+/*!
  videoTrackAdd 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogVideoTrackAddTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogVideoTrackAddTag;
 
-#pragma mark -- addTrack
-
-/*
+#pragma mark - addTrack
+/*!
  addTrack 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogAddTrackTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogAddTrackTag;
 
-#pragma mark -- firstFrameDraw
-
-/*
+#pragma mark - firstFrameDraw
+/*!
  firstFrameDraw 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogfirstFrameDrawTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogfirstFrameDrawTag;
 
-#pragma mark -- exceptionalLeaveRoom
-
-/*
+#pragma mark - exceptionalLeaveRoom
+/*!
  exceptionalLeaveRoom 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogExceptionalLeaveRoomTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogExceptionalLeaveRoomTag;
 
-#pragma mark -- removeStream
-
-/*
+#pragma mark - removeStream
+/*!
  removeStream 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRemoveStreamTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRemoveStreamTag;
 
-#pragma mark -- iceConnectionChange
-
-/*
+#pragma mark - iceConnectionChange
+/*!
  iceConnectionChange 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogIceConnectionChangeTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogIceConnectionChangeTag;
 
-#pragma mark -- modifyResource
-
-/*
+#pragma mark - modifyResource
+/*!
  modifyResource 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogModifyResourceTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogModifyResourceTag;
 
-/*
+#pragma mark - monitorReceiveStat
+/*!
  monitorReceiveStat 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogMonitorReceiveStatTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogMonitorReceiveStatTag;
 
-#pragma mark -- monitorLossStat
-
-/*
+#pragma mark - monitorLossStat
+/*!
  monitorLossStat 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogMonitorLossStatTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogMonitorLossStatTag;
 
-#pragma mark -- muteAll
-
-/*
+#pragma mark - muteAll
+/*!
  mute all 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogMuteAllTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogMuteAllTag;
 
-#pragma mark -- kicked from Server
-
-/*
+#pragma mark - kicked from Server
+/*!
  kicked from Server 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogKickedFromServerTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogKickedFromServerTag;
 
-#pragma mark -- rtc navi data
-
-/*
+#pragma mark - rtc navi data
+/*!
  rtc navi data 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRTCNaviDataTag ;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRTCNaviDataTag;
 
-#pragma mark -- diffData
-
-/*
+#pragma mark - diffData
+/*!
  diffData 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogDiffDataTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogDiffDataTag;
 
-#pragma mark -- best url
-
-/*
+#pragma mark - best url
+/*!
  best url 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRTCBestConnectUrlTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRTCBestConnectUrlTag;
 
-#pragma mark -- set room attribute
-/*
+#pragma mark - set room attribute
+/*!
  setRoomAttributeValue 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetRoomAttributeValueTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetRoomAttributeValueTag;
 
-#pragma mark -- getRoomAttribute
-/*
+#pragma mark - getRoomAttribute
+/*!
  getRoomAttribute 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogGetRoomAttributesTag ;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogGetRoomAttributesTag;
 
-#pragma mark -- deleteRoomAttribute
-/*
+#pragma mark - deleteRoomAttribute
+/*!
  deleteRoomAttributes 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogDeleteRoomAttributesTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogDeleteRoomAttributesTag;
 
-#pragma mark -- setAttributeValue
-/*
+#pragma mark - setAttributeValue
+/*!
  setAttributeValue 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetAttributeValueTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetAttributeValueTag;
 
-#pragma mark -- deleteAttributes
-/*
+#pragma mark - deleteAttributes
+/*!
  deleteAttributes 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogDeleteAttributesTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogDeleteAttributesTag;
 
-#pragma mark -- getAttributes
-/*
+#pragma mark - getAttributes
+/*!
  getAttributes 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogGetAttributesTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogGetAttributesTag;
 
-#pragma mark -- setReconnectEnable
-/*
+#pragma mark - setReconnectEnable
+/*!
  setReconnectEnable 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetReconnectEnableTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetReconnectEnableTag;
 
-#pragma mark -- initRemoteVideoView
-/*
+#pragma mark - initRemoteVideoView
+/*!
  initRemoteVideoView 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogInitRemoteVideoViewTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogInitRemoteVideoViewTag;
 
-#pragma mark -- destroyRemoteVideoView
-/*
+#pragma mark - destroyRemoteVideoView
+/*!
  destroyRemoteVideoView 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogDestroyRemoteVideoViewTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogDestroyRemoteVideoViewTag;
 
-#pragma mark -- setRemoteRenderView
-/*
+#pragma mark - setRemoteRenderView
+/*!
  setRemoteRenderView 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetRemoteRenderViewTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetRemoteRenderViewTag;
 
-#pragma mark -- setLocalRenderView
-/*
+#pragma mark - setLocalRenderView
+/*!
  setLocalRenderView 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetLocalRenderViewTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetLocalRenderViewTag;
 
-#pragma mark -- setRemoteTextureView
-/*
+#pragma mark - setRemoteTextureView
+/*!
  setRemoteTextureView 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetRemoteTextureViewTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetRemoteTextureViewTag;
 
-#pragma mark -- setLocalTextureView
-/*
+#pragma mark - setLocalTextureView
+/*!
  setLocalTextureView 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSetLocalTextureViewTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSetLocalTextureViewTag;
 
-#pragma mark -- httpRequest
-/*
+#pragma mark - httpRequest
+/*!
  httpRequest 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogHttpRequestTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogHttpRequestTag;
 
-#pragma mark -- IllegalFrameTimestamp
-/*
+#pragma mark - illegalFrameTimestamp
+/*!
  IllegalFrameTimestamp 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogIllegalFrameTimestamp;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogIllegalFrameTimestampTag;
 
-#pragma mark -- DecodeVideoFrameError
-/*
+#pragma mark - decodeVideoFrameError
+/*!
  DecodeVideoFrameError 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogDecodeVideoFrameError;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogDecodeVideoFrameErrorTag;
 
-/*
+#pragma mark - addPublishStreamUrl
+/*!
  添加推流地址
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogAddPublishStreamUrl;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogAddPublishStreamUrlTag;
 
-/*
+#pragma mark - removePublishStreamUrl
+/*!
  移除推流地址
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRemovePublishStreamUrl;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRemovePublishStreamUrlTag;
+
+#pragma mark - requestJoinOtherRoom
+/*!
+ 发起跨房间邀请, 上行
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRequestJoinOtherRoomTag;
+
+#pragma mark - cancelRequestJoinOtherRoom
+/*!
+ 取消跨房间邀请, 上行
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogCancelRequestJoinOtherRoomTag;
+
+#pragma mark - responseJoinOtherRoom
+/*!
+ 应答跨房间邀请, 上行
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogResponseJoinOtherRoomTag;
+
+#pragma mark - inviteTimeout
+/*!
+ 跨房间邀请超时
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogInviteTimeoutTag;
+
+#pragma mark - invite
+/*!
+ 收到邀请, 下行
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogInviteTag;
+
+#pragma mark - answerInvite
+/*!
+ 收到邀请应答, 下行
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogAnswerInviteTag;
+
+#pragma mark - cancelInvite
+/*!
+ 收到取消邀请, 下行
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogCancelInviteTag;
+
+#pragma mark - endInvite
+/*!
+ 收到结束连麦, 下行
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogEndInviteTag;
 
 
-#pragma mark ---------------------------------- 华丽的分割线 -------------------------------------------
-
+#pragma mark - --------------------------------- 华丽的分割线 -------------------------------------------
 
 #pragma mark - other
-
-/*
+/*!
  http error 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogHttpErrorTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogHttpErrorTag;
 
-/*
+/*!
  signal error 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogSignalErrorTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogSignalErrorTag;
 
-/*
+/*!
  other error 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogOtherErrorTag;
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogOtherErrorTag;
 
-/*
+/*!
  room id is not validaty 标记
-*/
-FOUNDATION_EXTERN NSString * const RongRTCLogRoomIdNotValidatyTag;
-
+ */
+FOUNDATION_EXTERN NSString *const RongRTCLogRoomIdNotValidatyTag;
 
 #pragma mark - 解释
-/*
+/*!
  以下规定死
  CALLER: 表示调用方，一般为 A 或者 L， A 表示 APP 调用 L 表示库内部调用，APP 用 A ，Lib 用 L ， 选下面的宏定义
  TAG:tag，日志的具体字符串，规定为宏定义，因为 IM 那边说必须严格按照这些tag，不一样不给上传，选下面的宏定义
@@ -599,27 +598,26 @@ FOUNDATION_EXTERN NSString * const RongRTCLogRoomIdNotValidatyTag;
  FMT：具体打印的 log 格式
  */
 
-#pragma mark ---------------------------------- 华丽的分割线 -------------------------------------------
-
+#pragma mark - --------------------------------- 华丽的分割线 -------------------------------------------
 
 #pragma mark - 宏定义
 
-/*
+/*!
  打印 log 的时候，要注意组合，比如，A-jomRoom-T,A-jomRoom-R,A-jomRoom-E,// 来源 app 调用
-                              L-jomRoom-T,L-jomRoom-R,L-jomRoom-E,// 来源 lib 调用
-                              P-jomRoom-T,P-jomRoom-R,P-jomRoom-E,// 来源 protocol 调用
+ L-jomRoom-T,L-jomRoom-R,L-jomRoom-E,// 来源 lib 调用
+ P-jomRoom-T,P-jomRoom-R,P-jomRoom-E,// 来源 protocol 调用
  */
-#define FINALTAG(a,b,c) [NSString stringWithFormat:@"%@-%@-%@",a,b,c]
+#define FINALTAG(a, b, c)                         [NSString stringWithFormat:@"%@-%@-%@", a, b, c]
 /// #define RongRTCLogE( A,t,T, k, ...) [[RCFwLog getInstance] write:RC_Level_E type:RC_Type_RTC tag:TAG(A,t,T) keys:k, ##__VA_ARGS__]
 /// #define RongRTCLogI( A,t,T, k, ...) [[RCFwLog getInstance] write:RC_Level_I type:RC_Type_RTC tag:TAG(A,t,T) keys:k, ##__VA_ARGS__]
 /// #define RongRTCLogD( A,t,T, k, ...) [[RCFwLog getInstance] write:RC_Level_D type:RC_Type_RTC tag:TAG(A,t,T) keys:k, ##__VA_ARGS__]
 
-#define RongRTCLogD( CALLER,TAG,FLAG, FMT, ...)  RCRTCLog(RC_Level_D, FINALTAG(CALLER,TAG,FLAG), FMT, ##__VA_ARGS__);
-#define RongRTCLogI( CALLER,TAG,FLAG, FMT, ...)  RCRTCLog(RC_Level_I, FINALTAG(CALLER,TAG,FLAG), FMT, ##__VA_ARGS__);
-#define RongRTCLogW( CALLER,TAG,ERROR, FMT, ...) RCRTCLog(RC_Level_W, FINALTAG(CALLER,TAG,ERROR), FMT, ##__VA_ARGS__);
-#define RongRTCLogE( CALLER,TAG,ERROR, FMT, ...) RCRTCLog(RC_Level_E, FINALTAG(CALLER,TAG,ERROR), FMT, ##__VA_ARGS__);
+#define RongRTCLogD(CALLER, TAG, FLAG, FMT, ...)  RCRTCLog(RC_Level_D, FINALTAG(CALLER, TAG, FLAG), FMT, ## __VA_ARGS__);
+#define RongRTCLogI(CALLER, TAG, FLAG, FMT, ...)  RCRTCLog(RC_Level_I, FINALTAG(CALLER, TAG, FLAG), FMT, ## __VA_ARGS__);
+#define RongRTCLogW(CALLER, TAG, ERROR, FMT, ...) RCRTCLog(RC_Level_W, FINALTAG(CALLER, TAG, ERROR), FMT, ## __VA_ARGS__);
+#define RongRTCLogE(CALLER, TAG, ERROR, FMT, ...) RCRTCLog(RC_Level_E, FINALTAG(CALLER, TAG, ERROR), FMT, ## __VA_ARGS__);
 
-#define RongRTCLogAE(TAG, FMT, ...) RCRTCLog(RC_Level_E, FINALTAG(RongRTCLogFromAPP,TAG,RongRTCLogTaskError), FMT, ##__VA_ARGS__);
-#define RongRTCLogAR(TAG, FMT, ...) RCRTCLog(RC_Level_I, FINALTAG(RongRTCLogFromAPP,TAG,RongRTCLogTaskResponse), FMT, ##__VA_ARGS__);
-#define RongRTCLogLE(TAG, FMT, ...) RCRTCLog(RC_Level_E, FINALTAG(RongRTCLogFromLib,TAG,RongRTCLogTaskError), FMT, ##__VA_ARGS__);
-#define RongRTCLogLR(TAG, FMT, ...) RCRTCLog(RC_Level_I, FINALTAG(RongRTCLogFromLib,TAG,RongRTCLogTaskResponse), FMT, ##__VA_ARGS__);
+#define RongRTCLogAE(TAG, FMT, ...)               RCRTCLog(RC_Level_E, FINALTAG(RongRTCLogFromAPP, TAG, RongRTCLogTaskError), FMT, ## __VA_ARGS__);
+#define RongRTCLogAR(TAG, FMT, ...)               RCRTCLog(RC_Level_I, FINALTAG(RongRTCLogFromAPP, TAG, RongRTCLogTaskResponse), FMT, ## __VA_ARGS__);
+#define RongRTCLogLE(TAG, FMT, ...)               RCRTCLog(RC_Level_E, FINALTAG(RongRTCLogFromLib, TAG, RongRTCLogTaskError), FMT, ## __VA_ARGS__);
+#define RongRTCLogLR(TAG, FMT, ...)               RCRTCLog(RC_Level_I, FINALTAG(RongRTCLogFromLib, TAG, RongRTCLogTaskResponse), FMT, ## __VA_ARGS__);

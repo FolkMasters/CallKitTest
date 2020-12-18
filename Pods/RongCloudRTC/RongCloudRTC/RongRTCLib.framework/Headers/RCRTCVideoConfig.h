@@ -14,27 +14,27 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RCRTCVideoConfig : NSObject
 
 /*!
- 大视频流配置
+ 视频大流配置
  */
 @property (nonatomic, strong) RCRTCVideoLayout *videoLayout;
 
 /*!
- 小视频流配置
+ 视频小流配置
  */
 @property (nonatomic, strong) RCRTCVideoLayout *tinyVideoLayout;
 
 /*!
- 视频扩展
+ 视频扩展配置
  */
 @property (nonatomic, strong) RCRTCVideoExtend *videoExtend;
 
 /*!
- 设置后的合流背景色
+ 合流布局背景色
  */
-@property (nonatomic, copy, readonly) NSString *backgroundColorStr;
+@property (nonatomic, copy, readonly) NSString *backgroundColor;
 
 /*!
- 设置合流背景色, 设置超出取值范围将会失败
+ 设置合流布局背景色
  
  @param red 取值范围: 0 ~ 255
  @param green 取值范围: 0 ~ 255
@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
                              blue:(NSUInteger)blue;
 
 /*!
- 设置合流背景色, 设置超出取值范围将会失败
+ 设置合流布局背景色
  
  @param backgroundColor 取值范围: 0x000000 ~ 0xffffff
  @discussion
