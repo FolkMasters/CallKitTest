@@ -5,3 +5,6 @@ ${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj
 ${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist
 ${PODS_ROOT}/RongCloudIM/RongCloudIM/RCColor.plist
 ${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist
+${PODS_ROOT}/RongCloudRTC/RongCloudRTC/RongCallKit.bundle
+${PODS_ROOT}/RongCloudRTC/RongCloudRTC/en.lproj
+${PODS_ROOT}/RongCloudRTC/RongCloudRTC/zh-Hans.lproj

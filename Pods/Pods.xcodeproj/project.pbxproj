@@ -13,7 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
-				0C4B98ED0C269115CCF91A603E055D17 /* PBXTargetDependency */,
+				1082B4435209B2C5061305A3D5913CAF /* PBXTargetDependency */,
 			);
 			name = RongCloudRTC;
 		};
@@ -33,55 +33,58 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C2FEA5C55C4CB7E507885D0D49701E9 /* PBXContainerItemProxy */ = {
+		1B9E5E203C56E9BF52A9EDD463A9E5CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5F1390C193C1C7A4549931293D944BC0;
 			remoteInfo = RongCloudIM;
 		};
-		6965DC6626D4C075F385BAD62CB8D8B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5F1390C193C1C7A4549931293D944BC0;
-			remoteInfo = RongCloudIM;
-		};
-		FAAC6E5A2A64337AC66E13FDA63ECF33 /* PBXContainerItemProxy */ = {
+		2C36622C61B342BD190AF05C5B11FDA9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 29B0F2E16ACBECA336BD142098A9039C;
 			remoteInfo = RongCloudRTC;
 		};
+		7CA20EE619AD7D289F637B247D393679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1390C193C1C7A4549931293D944BC0;
+			remoteInfo = RongCloudIM;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0707DF67E4FAFC8B9CD7911B1A5F1BAB /* Pods-CallKitDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CallKitDemo-resources.sh"; sourceTree = "<group>"; };
-		0D04A4F2DF18E93DB49B2DAA2BF63B1F /* RongCloudRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudRTC.debug.xcconfig; sourceTree = "<group>"; };
+		0EC1BE1C4809F640D4D2043F9D15569A /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "RongCloudRTC/zh-Hans.lproj"; sourceTree = "<group>"; };
 		1370118CD6DC021B9E3CA3B4EBF6F501 /* RongIMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMKit.framework; path = RongCloudIM/RongIMKit.framework; sourceTree = "<group>"; };
-		18EC513216195FBB3B6D48DD7D111C3D /* RongCallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongCallKit.framework; path = RongCloudRTC/RongCallKit.framework; sourceTree = "<group>"; };
 		1CD57C88B9A4BDB331E781DAB5A48637 /* Pods-CallKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CallKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		23791ED20075817838A24AE75F7287EA /* RongRTCLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongRTCLib.framework; path = RongCloudRTC/RongRTCLib.framework; sourceTree = "<group>"; };
+		219F1BE3721C363EDA983B4E9C6EEFF4 /* RongCloudRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudRTC.release.xcconfig; sourceTree = "<group>"; };
 		26922BE951F3DC6F61C8B9A34FA389FF /* libopencore-amrnb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "RongCloudIM/libopencore-amrnb.a"; sourceTree = "<group>"; };
 		28D66F2724C2050CAD64FC41C34A488A /* libopencore-amrwb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrwb.a"; path = "RongCloudIM/libopencore-amrwb.a"; sourceTree = "<group>"; };
 		32D52B3559EC86C0CA85F0F93D3996CC /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "RongCloudIM/zh-Hans.lproj"; sourceTree = "<group>"; };
 		374ADD5DDDEE04734A562287D90E206C /* RCConfig.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = RCConfig.plist; path = RongCloudIM/RCConfig.plist; sourceTree = "<group>"; };
 		4096479361F58D35EE36BE723BBAA811 /* libPods-CallKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CallKitDemo.a"; path = "libPods-CallKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4942B2C32106B7CD1FF4D33E1F06C876 /* Pods-CallKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CallKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		59E975D80B1B1E7DD306E7DE81E7DD60 /* RongCloudRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudRTC.release.xcconfig; sourceTree = "<group>"; };
+		60A841D12ED29294E17E002FE5019D1B /* RongCallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongCallKit.framework; path = RongCloudRTC/RongCallKit.framework; sourceTree = "<group>"; };
+		62B0AA10E5709B6D973B111B64DA830A /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = RongCloudRTC/en.lproj; sourceTree = "<group>"; };
 		676F2DBA02ADA69596D461BAFF754775 /* RCColor.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = RCColor.plist; path = RongCloudIM/RCColor.plist; sourceTree = "<group>"; };
 		75A5B0695D7D01A515D8AF9F4FCFD4CE /* libvo-amrwbenc.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libvo-amrwbenc.a"; path = "RongCloudIM/libvo-amrwbenc.a"; sourceTree = "<group>"; };
-		85E1A3009A427406634FCF3A13305279 /* RongCallLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongCallLib.framework; path = RongCloudRTC/RongCallLib.framework; sourceTree = "<group>"; };
 		994EDAFF52DF9E20B99568E9E52171F8 /* Pods-CallKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CallKitDemo-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B492D4BD0E4CCCFF1E0807CF8DE40ABD /* RongCallKit.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RongCallKit.bundle; path = RongCloudRTC/RongCallKit.bundle; sourceTree = "<group>"; };
 		B65558284017AE842D0124C57FD45A8C /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMLib.framework; path = RongCloudIM/RongIMLib.framework; sourceTree = "<group>"; };
 		BAF3548EB48C6D75FD29456760833BCE /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = RongCloudIM/en.lproj; sourceTree = "<group>"; };
 		C4C9A95B17E1FA03EC8E0CB753E23410 /* RongCloudIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudIM.debug.xcconfig; sourceTree = "<group>"; };
+		C82050D9AAE647B335C2A0E133C3DF6A /* RongCloudRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudRTC.debug.xcconfig; sourceTree = "<group>"; };
+		D085DA60FC7F2FD80447214A5574D0B9 /* RongCallLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongCallLib.framework; path = RongCloudRTC/RongCallLib.framework; sourceTree = "<group>"; };
 		D097228EBF2E3EB39006032040A5AFFA /* RongCloud.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RongCloud.bundle; path = RongCloudIM/RongCloud.bundle; sourceTree = "<group>"; };
 		E41C56DBCFC867CE6ECC0E5291C849FD /* Pods-CallKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CallKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		F0DDEFAE8E06BD815C569AF385BE2F36 /* Pods-CallKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CallKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F4A3C745B7FBA05C8D5E8B3B3AC1DDCF /* RongCloudIM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RongCloudIM.release.xcconfig; sourceTree = "<group>"; };
+		F768C26438D675BFF444008D8156D6A2 /* RongRTCLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongRTCLib.framework; path = RongCloudRTC/RongRTCLib.framework; sourceTree = "<group>"; };
 		F93E88B630B92888998C2A84A34270D9 /* Emoji.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Emoji.plist; path = RongCloudIM/Emoji.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		089303EF8899E95C2B74A4B69A7BD12C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D085DA60FC7F2FD80447214A5574D0B9 /* RongCallLib.framework */,
+				F768C26438D675BFF444008D8156D6A2 /* RongRTCLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09B6F8D956566C7AFC11A8DE38830A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60A841D12ED29294E17E002FE5019D1B /* RongCallKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		12BE10387C02546093706275A15B2238 /* IMLib */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +142,25 @@
 			name = IMKit;
 			sourceTree = "<group>";
 		};
+		29A070FF1693BDA416EA9BDCB086B4C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62B0AA10E5709B6D973B111B64DA830A /* en.lproj */,
+				B492D4BD0E4CCCFF1E0807CF8DE40ABD /* RongCallKit.bundle */,
+				0EC1BE1C4809F640D4D2043F9D15569A /* zh-Hans.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3A48253930A58D963E855989F4DD4913 /* RongCallKit */ = {
+			isa = PBXGroup;
+			children = (
+				09B6F8D956566C7AFC11A8DE38830A37 /* Frameworks */,
+				29A070FF1693BDA416EA9BDCB086B4C6 /* Resources */,
+			);
+			name = RongCallKit;
+			sourceTree = "<group>";
+		};
 		400617A84FDDDC9A18C3B971449AF2AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +171,14 @@
 				32D52B3559EC86C0CA85F0F93D3996CC /* zh-Hans.lproj */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		4283EED9BC84DA4B8FBE2A82586A87DA /* RongCallLib */ = {
+			isa = PBXGroup;
+			children = (
+				089303EF8899E95C2B74A4B69A7BD12C /* Frameworks */,
+			);
+			name = RongCallLib;
 			sourceTree = "<group>";
 		};
 		4635F88F9853EB6BE3030BAF12457B8A /* Support Files */ = {
@@ -166,14 +213,6 @@
 			path = "Target Support Files/Pods-CallKitDemo";
 			sourceTree = "<group>";
 		};
-		77A6E3A887F6E7FA6B7481BE61B71828 /* RongCallKit */ = {
-			isa = PBXGroup;
-			children = (
-				81C6D0A569A73419D6BC8761899DE7AA /* Frameworks */,
-			);
-			name = RongCallKit;
-			sourceTree = "<group>";
-		};
 		7A7C4C1960F7525E9344E23818AA6C5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,48 +224,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7B483C7C47D39DD549E7F4505CF1F038 /* Frameworks */ = {
+		911ECE293904EF654179ACF708A692AB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				85E1A3009A427406634FCF3A13305279 /* RongCallLib.framework */,
-				23791ED20075817838A24AE75F7287EA /* RongRTCLib.framework */,
+				C82050D9AAE647B335C2A0E133C3DF6A /* RongCloudRTC.debug.xcconfig */,
+				219F1BE3721C363EDA983B4E9C6EEFF4 /* RongCloudRTC.release.xcconfig */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		81C6D0A569A73419D6BC8761899DE7AA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				18EC513216195FBB3B6D48DD7D111C3D /* RongCallKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		81DDC3C72E5E2A04DF24F93F944A2650 /* RongCallLib */ = {
-			isa = PBXGroup;
-			children = (
-				7B483C7C47D39DD549E7F4505CF1F038 /* Frameworks */,
-			);
-			name = RongCallLib;
+			name = "Support Files";
+			path = "../Target Support Files/RongCloudRTC";
 			sourceTree = "<group>";
 		};
 		A685E4F8DB2254BE477D5014C93839B1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				F28B5BB529A8B1FB688965F1C5D8DC84 /* RongCloudIM */,
-				D8FA2BA9CCB5B21DDA635C0A4EF4F28F /* RongCloudRTC */,
+				F89ECB4C3BC6E356A763F74A925D2354 /* RongCloudRTC */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		BAFCF3A0B60CCF62E43AE1923FC01263 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0D04A4F2DF18E93DB49B2DAA2BF63B1F /* RongCloudRTC.debug.xcconfig */,
-				59E975D80B1B1E7DD306E7DE81E7DD60 /* RongCloudRTC.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RongCloudRTC";
 			sourceTree = "<group>";
 		};
 		BFCD71D5B1937762D43A95C13A0FEAE6 /* Resources */ = {
@@ -263,17 +277,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8FA2BA9CCB5B21DDA635C0A4EF4F28F /* RongCloudRTC */ = {
-			isa = PBXGroup;
-			children = (
-				77A6E3A887F6E7FA6B7481BE61B71828 /* RongCallKit */,
-				81DDC3C72E5E2A04DF24F93F944A2650 /* RongCallLib */,
-				BAFCF3A0B60CCF62E43AE1923FC01263 /* Support Files */,
-			);
-			name = RongCloudRTC;
-			path = RongCloudRTC;
-			sourceTree = "<group>";
-		};
 		F28B5BB529A8B1FB688965F1C5D8DC84 /* RongCloudIM */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +286,17 @@
 			);
 			name = RongCloudIM;
 			path = RongCloudIM;
+			sourceTree = "<group>";
+		};
+		F89ECB4C3BC6E356A763F74A925D2354 /* RongCloudRTC */ = {
+			isa = PBXGroup;
+			children = (
+				3A48253930A58D963E855989F4DD4913 /* RongCallKit */,
+				4283EED9BC84DA4B8FBE2A82586A87DA /* RongCallLib */,
+				911ECE293904EF654179ACF708A692AB /* Support Files */,
+			);
+			name = RongCloudRTC;
+			path = RongCloudRTC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +323,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				1A93EA0E42C068B6B5FD8CB636C36411 /* PBXTargetDependency */,
-				FCA9EDDF351DF939C1CE865D6C0A2501 /* PBXTargetDependency */,
+				597374300D37B51B1BFE6C7A8367ECF9 /* PBXTargetDependency */,
+				E9EB767FFDB64E54A00A3C5B4666F38F /* PBXTargetDependency */,
 			);
 			name = "Pods-CallKitDemo";
 			productName = "Pods-CallKitDemo";
@@ -358,23 +372,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C4B98ED0C269115CCF91A603E055D17 /* PBXTargetDependency */ = {
+		1082B4435209B2C5061305A3D5913CAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RongCloudIM;
 			target = 5F1390C193C1C7A4549931293D944BC0 /* RongCloudIM */;
-			targetProxy = 0C2FEA5C55C4CB7E507885D0D49701E9 /* PBXContainerItemProxy */;
+			targetProxy = 1B9E5E203C56E9BF52A9EDD463A9E5CA /* PBXContainerItemProxy */;
 		};
-		1A93EA0E42C068B6B5FD8CB636C36411 /* PBXTargetDependency */ = {
+		597374300D37B51B1BFE6C7A8367ECF9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RongCloudIM;
 			target = 5F1390C193C1C7A4549931293D944BC0 /* RongCloudIM */;
-			targetProxy = 6965DC6626D4C075F385BAD62CB8D8B4 /* PBXContainerItemProxy */;
+			targetProxy = 7CA20EE619AD7D289F637B247D393679 /* PBXContainerItemProxy */;
 		};
-		FCA9EDDF351DF939C1CE865D6C0A2501 /* PBXTargetDependency */ = {
+		E9EB767FFDB64E54A00A3C5B4666F38F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RongCloudRTC;
 			target = 29B0F2E16ACBECA336BD142098A9039C /* RongCloudRTC */;
-			targetProxy = FAAC6E5A2A64337AC66E13FDA63ECF33 /* PBXContainerItemProxy */;
+			targetProxy = 2C36622C61B342BD190AF05C5B11FDA9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -542,7 +556,7 @@
 		};
 		A9E0374E9FB5F03B088C027514ACAAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D04A4F2DF18E93DB49B2DAA2BF63B1F /* RongCloudRTC.debug.xcconfig */;
+			baseConfigurationReference = C82050D9AAE647B335C2A0E133C3DF6A /* RongCloudRTC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -558,7 +572,7 @@
 		};
 		AB66CE26BDF245DDE726D63F81DCDDBF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59E975D80B1B1E7DD306E7DE81E7DD60 /* RongCloudRTC.release.xcconfig */;
+			baseConfigurationReference = 219F1BE3721C363EDA983B4E9C6EEFF4 /* RongCloudRTC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
