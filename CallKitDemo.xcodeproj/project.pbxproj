@@ -93,7 +93,6 @@
 		31C617C23EA0E3EFDC151798 /* Pods-CallKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitDemo.release.xcconfig"; path = "Target Support Files/Pods-CallKitDemo/Pods-CallKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		693B751628031B53C3BBADB7 /* Pods-CallKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-CallKitDemo/Pods-CallKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6EDD6F942574F74E00C29E85 /* RongCallKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RongCallKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EE8F28A2576717400526582 /* CallKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallKitDemo.entitlements; sourceTree = "<group>"; };
 		91079DDCE1369309502C4225 /* Pods-CallKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitDemo.release.xcconfig"; path = "Target Support Files/Pods-CallKitDemo/Pods-CallKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C64980FF257106730001BF76 /* CallKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6498102257106730001BF76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -246,7 +245,6 @@
 		C6498101257106730001BF76 /* CallKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6EE8F28A2576717400526582 /* CallKitDemo.entitlements */,
 				C6498102257106730001BF76 /* AppDelegate.h */,
 				C6498103257106730001BF76 /* AppDelegate.m */,
 				C6498108257106730001BF76 /* ViewController.h */,

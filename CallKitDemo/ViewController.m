@@ -30,6 +30,7 @@
     
     [RCIM sharedRCIM].userInfoDataSource = self;
     [RCIM sharedRCIM].enablePersistentUserInfoCache = YES;
+    [self connectAction:nil];
     
 }
 - (IBAction)connectAction:(id)sender {

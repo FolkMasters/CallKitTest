@@ -8,10 +8,7 @@
 
 #import "AppDelegate.h"
 #import <RongIMKit/RongIMKit.h>
-#import <RongIMLib/RongIMLib.h>
 #import <RongCallKit/RongCallKit.h>
-#import <RongCallLib/RongCallLib.h>
-
 #import <UserNotifications/UserNotifications.h>
 @interface AppDelegate ()
 
