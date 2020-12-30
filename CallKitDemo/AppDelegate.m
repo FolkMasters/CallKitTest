@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import <RongIMKit/RongIMKit.h>
 #import <RongCallKit/RongCallKit.h>
 #import <UserNotifications/UserNotifications.h>
+#import "AppDelegate+Log.h"
+#import "UncaughtExceptionHandler.h"
 @interface AppDelegate ()
 
 @end
@@ -20,11 +21,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
+    [UncaughtExceptionHandler installUncaughtExceptionHandler:YES showAlert:YES];
+    
     // AppKey 设置
     [[RCIMClient sharedRCIMClient] initWithAppKey:@"82hegw5u81m9x"];
 //    [[RCIMClient sharedRCIMClient] setLogLevel:RC_Log_Level_Verbose];
     // RongCallKit初始化
-    [RCCall sharedRCCall];
+//    [RCCall sharedRCCall];
+    
+    //日志打印
+    [self redirectNSlogToDocumentFolder];
     
     //注册通知
     [self registerAPN];
