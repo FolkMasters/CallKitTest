@@ -1,15 +1,15 @@
 PODS:
-  - RongCloudIM/IMKit (4.1.0):
+  - RongCloudIM/IMKit (4.1.0.1):
     - RongCloudIM/IMLib
-  - RongCloudIM/IMLib (4.1.0)
-  - RongCloudRTC (4.1.0):
-    - RongCloudRTC/RongCallKit (= 4.1.0)
-    - RongCloudRTC/RongCallLib (= 4.1.0)
-  - RongCloudRTC/RongCallKit (4.1.0):
+  - RongCloudIM/IMLib (4.1.0.1)
+  - RongCloudRTC (4.1.0.2):
+    - RongCloudRTC/RongCallKit (= 4.1.0.2)
+    - RongCloudRTC/RongCallLib (= 4.1.0.2)
+  - RongCloudRTC/RongCallKit (4.1.0.2):
     - RongCloudIM/IMKit (~> 4.1.0)
     - RongCloudIM/IMLib (~> 4.1.0)
     - RongCloudRTC/RongCallLib
-  - RongCloudRTC/RongCallLib (4.1.0):
+  - RongCloudRTC/RongCallLib (4.1.0.2):
     - RongCloudIM/IMLib (~> 4.1.0)
 
 DEPENDENCIES:
@@ -21,8 +21,8 @@ SPEC REPOS:
     - RongCloudRTC
 
 SPEC CHECKSUMS:
-  RongCloudIM: 7acd9b5a88520ed395da0ffdca15fb1649e58e5d
-  RongCloudRTC: 34e0e4ef61e758291ce2e918e59eb933e0892a0e
+  RongCloudIM: f8d1d36babf53224ac66cbe5d7f2aa486a536b37
+  RongCloudRTC: 35bb00bb4f48561f23bcfb8b3f1273820435613c
 
 PODFILE CHECKSUM: f7a9f180a607ed0f1cb3bfbbd3bce7169b3fa7f0
 

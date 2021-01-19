@@ -22,7 +22,7 @@
     // Override point for customization after application launch.
     
     
-    [UncaughtExceptionHandler installUncaughtExceptionHandler:YES showAlert:YES];
+//    [UncaughtExceptionHandler installUncaughtExceptionHandler:YES showAlert:YES];
     
     // AppKey 设置
     [[RCIMClient sharedRCIMClient] initWithAppKey:@"82hegw5u81m9x"];
@@ -31,7 +31,7 @@
 //    [RCCall sharedRCCall];
     
     //日志打印
-    [self redirectNSlogToDocumentFolder];
+//    [self redirectNSlogToDocumentFolder];
     
     //注册通知
     [self registerAPN];
