@@ -7,7 +7,7 @@ target 'CallKitDemo' do
 #  use_frameworks!
 
   # Pods for CallKitDemo
-  pod 'Masonry'
+#  pod 'Masonry'
     pod 'RongCloudRTC'
     
     # 百度定位

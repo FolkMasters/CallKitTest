@@ -1,5 +1,4 @@
 PODS:
-  - Masonry (1.1.0)
   - RongCloudIM/IMKit (4.1.0):
     - RongCloudIM/IMLib
   - RongCloudIM/IMLib (4.1.0)
@@ -14,20 +13,17 @@ PODS:
     - RongCloudIM/IMLib (~> 4.1.0)
 
 DEPENDENCIES:
-  - Masonry
   - RongCloudRTC
 
 SPEC REPOS:
   trunk:
-    - Masonry
     - RongCloudIM
     - RongCloudRTC
 
 SPEC CHECKSUMS:
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RongCloudIM: 7acd9b5a88520ed395da0ffdca15fb1649e58e5d
   RongCloudRTC: 34e0e4ef61e758291ce2e918e59eb933e0892a0e
 
-PODFILE CHECKSUM: effad4aa7fbe4bf704bf980f76a9701aec2328cc
+PODFILE CHECKSUM: f7a9f180a607ed0f1cb3bfbbd3bce7169b3fa7f0
 
 COCOAPODS: 1.10.0

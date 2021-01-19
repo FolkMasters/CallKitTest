@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1E482707259C183E00801853 /* AppDelegate+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E482706259C183E00801853 /* AppDelegate+Log.m */; };
 		1E48272E259C273000801853 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E48272D259C273000801853 /* UncaughtExceptionHandler.m */; };
-		1EF3FAC02590958D000D7A89 /* RTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3FABF2590958D000D7A89 /* RTCViewController.m */; };
 		3EB221C780D609FA171FE619 /* libPods-CallKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E416EE0DB0F9DE0229BD79B0 /* libPods-CallKitDemo.a */; };
 		6E4604912575113100D51F78 /* RongCallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDD6F942574F74E00C29E85 /* RongCallKit.framework */; };
 		C6498104257106730001BF76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6498103257106730001BF76 /* AppDelegate.m */; };
@@ -97,8 +96,6 @@
 		1E482706259C183E00801853 /* AppDelegate+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Log.m"; sourceTree = "<group>"; };
 		1E48272C259C272F00801853 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		1E48272D259C273000801853 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
-		1EF3FABE2590958D000D7A89 /* RTCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCViewController.h; sourceTree = "<group>"; };
-		1EF3FABF2590958D000D7A89 /* RTCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCViewController.m; sourceTree = "<group>"; };
 		31C617C23EA0E3EFDC151798 /* Pods-CallKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitDemo.release.xcconfig"; path = "Target Support Files/Pods-CallKitDemo/Pods-CallKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		693B751628031B53C3BBADB7 /* Pods-CallKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-CallKitDemo/Pods-CallKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6EDD6F942574F74E00C29E85 /* RongCallKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RongCallKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,8 +257,6 @@
 				1E482706259C183E00801853 /* AppDelegate+Log.m */,
 				C6498108257106730001BF76 /* ViewController.h */,
 				C6498109257106730001BF76 /* ViewController.m */,
-				1EF3FABE2590958D000D7A89 /* RTCViewController.h */,
-				1EF3FABF2590958D000D7A89 /* RTCViewController.m */,
 				C649810B257106730001BF76 /* Main.storyboard */,
 				C649810E257106750001BF76 /* Assets.xcassets */,
 				C6498110257106750001BF76 /* LaunchScreen.storyboard */,
@@ -546,7 +541,6 @@
 			files = (
 				C649810A257106730001BF76 /* ViewController.m in Sources */,
 				C6498104257106730001BF76 /* AppDelegate.m in Sources */,
-				1EF3FAC02590958D000D7A89 /* RTCViewController.m in Sources */,
 				1E482707259C183E00801853 /* AppDelegate+Log.m in Sources */,
 				C6498115257106750001BF76 /* main.m in Sources */,
 				1E48272E259C273000801853 /* UncaughtExceptionHandler.m in Sources */,
